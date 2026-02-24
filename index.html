@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For My Favorite Person ❤️</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="floating-hearts-container"></div>
+    
+    <div class="glass-container" id="app-container">
+        <!-- Start Screen -->
+        <div id="start-screen" class="screen active" style="display: block;">
+            <h1 class="title">How well do you know us? 🥰</h1>
+            <p class="subtitle">A little quiz for my favorite person in the whole world.</p>
+            <button id="start-btn" class="primary-btn">Let's Find Out! ✨</button>
+        </div>
+
+        <!-- Quiz Screen -->
+        <div id="quiz-screen" class="screen">
+            <div class="quiz-header">
+                <span id="question-counter">Question 1/X</span>
+                <div class="progress-bar">
+                    <div id="progress" class="progress"></div>
+                </div>
+            </div>
+            <h2 id="question-text" class="question">Loading question...</h2>
+            <div id="options-container" class="options-container">
+                <!-- Options injected by JS -->
+            </div>
+        </div>
+
+        <!-- Result Screen -->
+        <div id="result-screen" class="screen">
+            <h1 class="title" id="result-title">You finished! 🎉</h1>
+            <div class="score-container">
+                <span id="score-text">You scored <span id="score-number"></span> out of <span id="total-questions"></span></span>
+            </div>
+            <p id="result-message" class="subtitle">Calculating your love score...</p>
+            <button id="restart-btn" class="primary-btn secondary">Play Again 💖</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
